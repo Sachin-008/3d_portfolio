@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="title description">
+  <title id="title">Sales data analysis dashboard</title>
+  <desc id="description">A sales dashboard with monthly revenue, product comparisons, and regional sales performance.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#24173f"/>
+      <stop offset="1" stop-color="#38214f"/>
+    </linearGradient>
+    <linearGradient id="sales" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffb454"/>
+      <stop offset="1" stop-color="#ff6f91"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#background)"/>
+  <circle cx="1050" cy="80" r="230" fill="#ff9d64" opacity=".09"/>
+  <circle cx="110" cy="550" r="260" fill="#b56cff" opacity=".08"/>
+
+  <rect x="70" y="70" width="1060" height="460" rx="26" fill="#171329" stroke="#5b456c" stroke-width="2"/>
+  <rect x="70" y="70" width="1060" height="58" rx="26" fill="#302346"/>
+  <path d="M70 102h1060v26H70z" fill="#302346"/>
+  <circle cx="105" cy="99" r="8" fill="#ff7b7b"/>
+  <circle cx="133" cy="99" r="8" fill="#ffd166"/>
+  <circle cx="161" cy="99" r="8" fill="#71d6a3"/>
+  <text x="205" y="107" fill="#fff1e7" font-family="Arial,sans-serif" font-size="20" font-weight="700">SALES PERFORMANCE</text>
+  <rect x="934" y="84" width="160" height="30" rx="15" fill="#493557"/>
+  <text x="968" y="105" fill="#f6d6c3" font-family="Arial,sans-serif" font-size="13" font-weight="700">YEAR TO DATE</text>
+
+  <rect x="104" y="158" width="992" height="110" rx="16" fill="#261e38" stroke="#473756"/>
+  <text x="132" y="195" fill="#b4a1c5" font-family="Arial,sans-serif" font-size="15" font-weight="700">TOTAL REVENUE</text>
+  <text x="132" y="244" fill="#fff7f0" font-family="Arial,sans-serif" font-size="42" font-weight="700">$284,650</text>
+  <rect x="440" y="180" width="1" height="68" fill="#4a3958"/>
+  <text x="470" y="195" fill="#b4a1c5" font-family="Arial,sans-serif" font-size="15" font-weight="700">UNITS SOLD</text>
+  <text x="470" y="244" fill="#fff7f0" font-family="Arial,sans-serif" font-size="38" font-weight="700">8,492</text>
+  <rect x="718" y="180" width="1" height="68" fill="#4a3958"/>
+  <text x="748" y="195" fill="#b4a1c5" font-family="Arial,sans-serif" font-size="15" font-weight="700">TOP CATEGORY</text>
+  <text x="748" y="239" fill="#fff7f0" font-family="Arial,sans-serif" font-size="29" font-weight="700">Electronics</text>
+  <rect x="978" y="192" width="88" height="34" rx="17" fill="#254938"/>
+  <text x="997" y="215" fill="#83e1a8" font-family="Arial,sans-serif" font-size="15" font-weight="700">+12.8%</text>
+
+  <rect x="104" y="288" width="604" height="204" rx="16" fill="#261e38" stroke="#473756"/>
+  <text x="132" y="326" fill="#fff1e7" font-family="Arial,sans-serif" font-size="17" font-weight="700">MONTHLY REVENUE</text>
+  <g stroke="#493957" stroke-width="1">
+    <path d="M148 364h526M148 400h526M148 436h526M148 472h526"/>
+  </g>
+  <path d="M164 451l76-30 76 13 76-52 76 18 76-47 76 12" fill="none" stroke="url(#sales)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#ff9c71" stroke="#261e38" stroke-width="3">
+    <circle cx="164" cy="451" r="7"/><circle cx="240" cy="421" r="7"/>
+    <circle cx="316" cy="434" r="7"/><circle cx="392" cy="382" r="7"/>
+    <circle cx="468" cy="400" r="7"/><circle cx="544" cy="353" r="7"/>
+    <circle cx="620" cy="365" r="7"/>
+  </g>
+  <g fill="#a994ba" font-family="Arial,sans-serif" font-size="12">
+    <text x="153" y="485">JAN</text><text x="229" y="485">FEB</text>
+    <text x="305" y="485">MAR</text><text x="381" y="485">APR</text>
+    <text x="457" y="485">MAY</text><text x="533" y="485">JUN</text>
+    <text x="609" y="485">JUL</text>
+  </g>
+
+  <rect x="728" y="288" width="368" height="204" rx="16" fill="#261e38" stroke="#473756"/>
+  <text x="756" y="326" fill="#fff1e7" font-family="Arial,sans-serif" font-size="17" font-weight="700">SALES BY REGION</text>
+  <g font-family="Arial,sans-serif" font-size="14" fill="#d9cce2">
+    <text x="756" y="367">North</text><text x="756" y="405">South</text>
+    <text x="756" y="443">West</text><text x="756" y="481">East</text>
+  </g>
+  <g>
+    <rect x="835" y="350" width="158" height="19" rx="9" fill="#493957"/>
+    <rect x="835" y="350" width="135" height="19" rx="9" fill="url(#sales)"/>
+    <rect x="835" y="388" width="158" height="19" rx="9" fill="#493957"/>
+    <rect x="835" y="388" width="111" height="19" rx="9" fill="#d67ac2"/>
+    <rect x="835" y="426" width="158" height="19" rx="9" fill="#493957"/>
+    <rect x="835" y="426" width="94" height="19" rx="9" fill="#b779dc"/>
+    <rect x="835" y="464" width="158" height="19" rx="9" fill="#493957"/>
+    <rect x="835" y="464" width="76" height="19" rx="9" fill="#8d82df"/>
+  </g>
+  <g fill="#e8dced" font-family="Arial,sans-serif" font-size="13" font-weight="700">
+    <text x="1007" y="366">38%</text><text x="1007" y="404">29%</text>
+    <text x="1007" y="442">22%</text><text x="1007" y="480">18%</text>
+  </g>
+</svg>
