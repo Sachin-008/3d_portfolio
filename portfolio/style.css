@@ -775,6 +775,18 @@ button {
     margin-bottom: 10px;
 }
 
+.project-status {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 2px 6px;
+    border-radius: 10px;
+    background: var(--glass-border);
+    color: var(--accent-1);
+    font-size: 0.65rem;
+    font-weight: 700;
+    vertical-align: 2px;
+}
+
 .project-content p {
     color: var(--text-secondary);
     font-size: 0.95rem;
