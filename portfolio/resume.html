@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Resume of Sachin Tiwari, frontend developer and computer science engineering student.">
+    <title>Sachin Tiwari — Resume</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Inter, "Segoe UI", Arial, sans-serif;
+            color: #17243b;
+            background: #edf2f8;
+            font-synthesis: none;
+            text-rendering: optimizeLegibility;
+        }
+
+        * { box-sizing: border-box; }
+
+        body { margin: 0; padding: 40px 18px; }
+
+        .resume {
+            width: min(100%, 820px);
+            min-height: 1056px;
+            margin: 0 auto;
+            padding: 58px 64px;
+            background: #fff;
+            box-shadow: 0 18px 70px rgba(20, 40, 72, 0.13);
+        }
+
+        .toolbar {
+            position: fixed;
+            right: 24px;
+            bottom: 24px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .toolbar a,
+        .toolbar button {
+            padding: 12px 17px;
+            border: 0;
+            border-radius: 9px;
+            background: #167d83;
+            color: #fff;
+            font: inherit;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .eyebrow,
+        .section-title { color: #167d83; }
+
+        .eyebrow {
+            margin: 0 0 8px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+            color: #13213a;
+            font-size: 36px;
+            letter-spacing: -0.045em;
+        }
+
+        .headline {
+            margin: 6px 0 13px;
+            color: #52627c;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .contact-line {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 18px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #dce5ef;
+            color: #52627c;
+            font-size: 12px;
+        }
+
+        a { color: #167d83; text-decoration: none; }
+
+        section { margin-top: 21px; }
+
+        .section-title {
+            margin: 0 0 8px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #dce5ef;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        p, li {
+            color: #34445d;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        p { margin: 6px 0; }
+
+        .entry {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            margin-top: 10px;
+        }
+
+        .entry h3 {
+            margin: 0;
+            color: #17243b;
+            font-size: 14px;
+        }
+
+        .project-status {
+            display: inline-block;
+            margin-left: 6px;
+            padding: 2px 6px;
+            border-radius: 10px;
+            background: #e8f4f3;
+            color: #167d83;
+            font-size: 9px;
+            font-weight: 700;
+            vertical-align: 2px;
+        }
+
+        .entry p { margin: 3px 0; }
+
+        ul {
+            margin: 7px 0 0;
+            padding-left: 17px;
+        }
+
+        li { margin: 3px 0; }
+
+        .skills {
+            display: grid;
+            grid-template-columns: 120px 1fr;
+            gap: 6px 12px;
+        }
+
+        .skills strong { color: #17243b; font-size: 12px; }
+        .skills span { color: #34445d; font-size: 12px; line-height: 1.6; }
+
+        @media (max-width: 600px) {
+            body { padding: 0; }
+            .resume { min-height: 100vh; padding: 36px 24px; }
+            .toolbar { right: 12px; bottom: 12px; }
+            .skills { grid-template-columns: 1fr; gap: 2px; }
+            .skills span { margin-bottom: 6px; }
+        }
+
+        @page { size: A4; margin: 12mm; }
+
+        @media print {
+            :root { background: #fff; }
+            body { padding: 0; }
+            .resume {
+                width: 100%;
+                min-height: auto;
+                padding: 0;
+                box-shadow: none;
+            }
+            .toolbar { display: none; }
+            section { margin-top: 16px; }
+            p, li { font-size: 10.5px; }
+            .skills strong, .skills span { font-size: 10.5px; }
+        }
+    </style>
+</head>
+<body>
+    <main class="resume">
+        <header>
+            <p class="eyebrow">Resume</p>
+            <h1>Sachin Tiwari</h1>
+            <p class="headline">Frontend Developer · Computer Science Engineering Student · Data &amp; SAP Aspirant</p>
+            <div class="contact-line">
+                <a href="mailto:kstark845416@gmail.com">kstark845416@gmail.com</a>
+                <span>Motihari, Bihar</span>
+                <a href="https://github.com/Sachin-008">GitHub</a>
+                <a href="https://www.linkedin.com/in/sachin-tiwari-9b143033b/">LinkedIn</a>
+                <a href="https://leetcode.com/">LeetCode</a>
+            </div>
+        </header>
+
+        <section>
+            <h2 class="section-title">Profile</h2>
+            <p>Fifth-semester Computer Science Engineering student and frontend developer with internship experience creating responsive web interfaces. Skilled in HTML, CSS, JavaScript, and SQL, with 200+ LeetCode problems solved. Seeking opportunities in data-focused and SAP-related work, and eager to apply problem-solving skills while growing in these fields.</p>
+        </section>
+
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="entry">
+                <div>
+                    <h3>Computer Science Engineering</h3>
+                    <p>Currently in 5th semester</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Experience</h2>
+            <div class="entry">
+                <div>
+                    <h3>Frontend Development Intern</h3>
+                    <p>Frontend development internship experience, building responsive web interfaces and strengthening practical frontend skills.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Projects</h2>
+            <div class="entry">
+                <div>
+                    <h3>Weather App</h3>
+                    <p>Created a weather application that displays current conditions using an external API.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript, API · <a href="https://forecast1weather.netlify.app/">Live demo</a></p>
+                </div>
+            </div>
+            <div class="entry">
+                <div>
+                    <h3>Calculator</h3>
+                    <p>Built a browser-based calculator for common arithmetic operations.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript · <a href="https://new-calculator-web.netlify.app/">Live demo</a></p>
+                </div>
+            </div>
+            <div class="entry">
+                <div>
+                    <h3>Tic Tac Toe &amp; Stone Paper Scissor</h3>
+                    <p>Developed responsive browser games with interactive gameplay and game-state handling.</p>
+                    <p><strong>Technologies:</strong> HTML, CSS, JavaScript · <a href="https://tic-tac-toe-sachin.netlify.app/">Tic Tac Toe</a> · <a href="https://game-stonepaper.netlify.app/">Stone Paper Scissor</a></p>
+                </div>
+            </div>
+            <h3 style="margin: 16px 0 4px; color: #167d83; font-size: 13px;">Planned Data Projects</h3>
+            <div class="entry">
+                <div>
+                    <h3>Retail Sales &amp; Performance Analysis <span class="project-status">Planned</span></h3>
+                    <p>Analyze a sample retail dataset to explore sales trends, product performance, and monthly revenue.</p>
+                    <p><strong>Planned tools:</strong> SQL, Python, pandas, Power BI</p>
+                </div>
+            </div>
+            <div class="entry">
+                <div>
+                    <h3>Customer Churn Exploration <span class="project-status">Planned</span></h3>
+                    <p>Prepare and explore a public customer dataset to identify churn patterns and summarize key factors.</p>
+                    <p><strong>Planned tools:</strong> Python, pandas, SQL, data visualization</p>
+                </div>
+            </div>
+            <div class="entry">
+                <div>
+                    <h3>SAP Procurement Spend Analysis <span class="project-status">Planned</span></h3>
+                    <p>Explore sample procurement records through an SAP materials-management lens, comparing spend by vendor, material, and period.</p>
+                    <p><strong>Planned tools:</strong> SQL, Power BI, SAP materials-management concepts</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Skills</h2>
+            <div class="skills">
+                <strong>Programming Languages</strong><span>C, C++, Python, Java, SQL</span>
+                <strong>Data Libraries</strong><span>NumPy, pandas, Matplotlib</span>
+                <strong>Web</strong><span>HTML, CSS, JavaScript</span>
+                <strong>Core subjects</strong><span>Data Structures and Algorithms, Design and Analysis of Algorithms, Database Management Systems, Computer Organization and Architecture, Computer Networks</span>
+                <strong>Problem solving</strong><span>200+ problems solved on LeetCode</span>
+                <strong>Career interests</strong><span>Data-focused roles, SAP-related work</span>
+            </div>
+        </section>
+    </main>
+
+    <div class="toolbar">
+        <a href="index.html">Portfolio</a>
+        <button type="button" onclick="window.print()">Save as PDF</button>
+    </div>
+</body>
+</html>

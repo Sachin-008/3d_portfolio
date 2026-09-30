@@ -61,8 +61,10 @@ window.addEventListener('scroll', () => {
 
 // Mobile Menu Toggle
 hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navLinks.classList.toggle('active');
+    const isOpen = hamburger.classList.toggle('active');
+    navLinks.classList.toggle('active', isOpen);
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+    hamburger.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
 });
 
 // Close Mobile Menu when link clicked
@@ -70,7 +72,19 @@ navItems.forEach(item => {
     item.addEventListener('click', () => {
         hamburger.classList.remove('active');
         navLinks.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-label', 'Open navigation menu');
     });
+});
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && navLinks.classList.contains('active')) {
+        hamburger.classList.remove('active');
+        navLinks.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        hamburger.setAttribute('aria-label', 'Open navigation menu');
+        hamburger.focus();
+    }
 });
 
 // Active Link Highlight on Scroll
@@ -97,7 +111,7 @@ window.addEventListener('scroll', () => {
 // ==========================================================================
 // Typewriter Effect
 // ==========================================================================
-const roles = ["Frontend Developer", "CS Engineering Student", "Problem Solver"];
+const roles = ["Frontend Developer", "Data Enthusiast", "SAP Aspirant"];
 let roleIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -218,41 +232,30 @@ if (contactForm) {
         const email = document.getElementById('email').value.trim();
         const message = document.getElementById('message').value.trim();
         
-        if (name && email && message) {
-            // Simple email validation regex
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            
-            if (emailRegex.test(email)) {
-                // Simulate form submission
-                const submitBtn = contactForm.querySelector('button[type="submit"]');
-                const originalText = submitBtn.innerHTML;
-                
-                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
-                submitBtn.disabled = true;
-                
-                setTimeout(() => {
-                    formMessage.textContent = 'Message sent successfully! I will get back to you soon.';
-                    formMessage.className = 'form-message success';
-                    contactForm.reset();
-                    
-                    submitBtn.innerHTML = originalText;
-                    submitBtn.disabled = false;
-                    
-                    setTimeout(() => {
-                        formMessage.textContent = '';
-                        formMessage.className = 'form-message';
-                    }, 5000);
-                }, 1500);
-            } else {
-                formMessage.textContent = 'Please enter a valid email address.';
-                formMessage.className = 'form-message error';
-            }
-        } else {
+        if (!name || !email || !message) {
             formMessage.textContent = 'Please fill in all fields.';
             formMessage.className = 'form-message error';
+            return;
+        } else {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                formMessage.textContent = 'Please enter a valid email address.';
+                formMessage.className = 'form-message error';
+                return;
+            }
         }
+
+        const subject = `Portfolio message from ${name}`;
+        const body = `${message}\n\nFrom: ${name}\nEmail: ${email}`;
+        const mailto = `mailto:kstark845416@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        formMessage.textContent = 'Opening your email app to send this message.';
+        formMessage.className = 'form-message success';
+        window.location.href = mailto;
     });
 }
 
 // Set Current Year in Footer
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearElement = document.getElementById('year');
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
+}

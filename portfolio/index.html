@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Software Developer</title>
+    <title>Sachin Tiwari — Frontend Developer | Data & SAP Aspirant</title>
     <meta name="description"
-        content="Personal portfolio of a Software Developer showcasing projects, skills, and CS fundamentals.">
+        content="Explore the projects, skills, and experience of Sachin Tiwari, a frontend developer and computer science student seeking opportunities in data and SAP.">
+    <meta name="theme-color" content="#0b1020">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,7 @@
     </div>
 
     <!-- Navigation -->
-    <nav id="navbar">
+    <nav id="navbar" aria-label="Main navigation">
         <div class="nav-container">
             <a href="#home" class="logo">Sachin<span>.</span></a>
 
@@ -46,11 +47,11 @@
                 <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">
                     <i class="fas fa-moon"></i>
                 </button>
-                <div class="hamburger">
+                <button class="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div>
+                </button>
             </div>
         </div>
     </nav>
@@ -58,26 +59,25 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-
-            <h1 class="name animate-up delay-1">Sachin Tiwari</h1>
-            <h2 class="role animate-up delay-2">I am a <span class="typewriter"></span><span class="cursor">|</span>
+            <p class="greeting animate-up delay-1"><span class="availability-dot"></span> Open to data &amp; SAP opportunities</p>
+            <h1 class="name animate-up delay-2">Building for<br><span class="gradient-text">the web.</span></h1>
+            <h2 class="role animate-up delay-3">I'm Sachin Tiwari<span class="role-divider"> / </span><span class="typewriter"></span><span class="cursor">|</span>
             </h2>
-            <p class="tagline animate-up delay-3">Frontend Developer & CS Engineering Student.</p>
+            <p class="tagline animate-up delay-4">Frontend developer and 5th-semester computer science student, building thoughtful web experiences while exploring data and SAP careers.</p>
 
-            <div class="hero-buttons animate-up delay-4">
-                <a href="#contact" class="btn btn-primary">Hire Me</a>
-                <a href="#" class="btn btn-outline" download>Download Resume <i class="fas fa-download"></i></a>
+            <div class="hero-buttons animate-up delay-5">
+                <a href="#projects" class="btn btn-primary">Explore my work <i class="fas fa-arrow-down"></i></a>
+                <a href="resume.html" class="btn btn-outline" download="Sachin-Tiwari-Resume.html">Download Resume <i class="fas fa-download"></i></a>
+                <a href="mailto:kstark845416@gmail.com" class="btn btn-outline">Get in touch <i class="fas fa-arrow-up-right-from-square"></i></a>
             </div>
 
             <div class="social-links animate-up delay-5">
-                <a href="https://github.com/Sachin-008" target="_blank" aria-label="GitHub"><i
+                <a href="https://github.com/Sachin-008" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
                         class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/sachin-tiwari-9b143033b/" target="_blank" aria-label="LinkedIn"><i
+                <a href="https://www.linkedin.com/in/sachin-tiwari-9b143033b/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i
                         class="fab fa-linkedin-in"></i></a>
-                <a href="https://leetcode.com/settings/profile/" target="_blank" aria-label="LeetCode"><i
+                <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i
                         class="fas fa-code"></i></a>
-                <a href="https://www.geeksforgeeks.org/profile/ksachinwhqh" target="_blank"
-                    aria-label="GeeksforGeeks"><i class="fas fa-laptop-code"></i></a>
             </div>
         </div>
 
@@ -91,11 +91,11 @@
                 </div>
                 <div class="card-body">
                     <code>
-                        <span class="token keyword">const</span> developer <span class="token operator">=</span> {<br>
-                        &nbsp;&nbsp;name: <span class="token string">'Sachin Tiwari'</span>,<br>
-                        &nbsp;&nbsp;skills: [<span class="token string">'HTML'</span>, <span class="token string">'CSS'</span>, <span class="token string">'JavaScript'</span>],<br>
-                        &nbsp;&nbsp;hardWorker: <span class="token boolean">true</span>,<br>
-                        &nbsp;&nbsp;problemSolver: <span class="token boolean">true</span><br>
+                        <span class="token keyword">const</span> sachin <span class="token operator">=</span> {<br>
+                        &nbsp;&nbsp;focus: <span class="token string">'Frontend + data'</span>,<br>
+                        &nbsp;&nbsp;exploring: <span class="token string">'SAP'</span>,<br>
+                        &nbsp;&nbsp;experience: <span class="token string">'Frontend intern'</span>,<br>
+                        &nbsp;&nbsp;curious: <span class="token boolean">true</span><br>
                         };
                     </code>
                 </div>
@@ -122,18 +122,28 @@
                 </div>
 
                 <div class="about-text">
-                    <h3>Frontend Developer & CS Student</h3>
-                    <p>I am a 4th semester Computer Science Engineering student with a deep passion for the data domain
+                    <h3>Frontend developer with a data-first mindset.</h3>
+                    <p>I am a 5th semester Computer Science Engineering student with a deep passion for the data domain
                         and software development. I have a strong foundation in core CS fundamentals like Data
                         Structures, Algorithms, and OOPs, which enables me to build robust solutions that solve
                         real-world problems.</p>
-                    <p>While I enjoy crafting user-friendly interfaces with HTML, CSS, and JavaScript, my true drive
-                        lies in exploring data-centric technologies. I am continuously learning and aiming to bridge the
-                        gap between powerful data applications and seamless frontend experiences.</p>
+                    <p>Alongside building interfaces with HTML, CSS, and JavaScript, I am developing my knowledge of
+                        databases and SQL and exploring SAP. I am looking for opportunities in data-focused and
+                        SAP-related work where I can keep learning and contribute.</p>
+
+                    <div class="experience-card glass">
+                        <span class="experience-icon"><i class="fas fa-briefcase"></i></span>
+                        <div>
+                            <p class="experience-label">Experience</p>
+                            <h4>Frontend Development Intern</h4>
+                            <p>Internship experience building frontend skills and creating responsive web interfaces.</p>
+                        </div>
+                    </div>
+                    <p class="career-focus"><i class="fas fa-compass"></i> Currently exploring opportunities in Data &amp; SAP</p>
 
                     <div class="stats">
                         <div class="stat-item glass">
-                            <h4>4th</h4>
+                            <h4>5th</h4>
                             <p>Semester CSE</p>
                         </div>
                         <div class="stat-item glass">
@@ -141,8 +151,8 @@
                             <p>Projects</p>
                         </div>
                         <div class="stat-item glass">
-                            <h4>100+</h4>
-                            <p>LeetCode & GFG</p>
+                            <h4>200+</h4>
+                            <p>LeetCode problems</p>
                         </div>
                     </div>
                 </div>
@@ -181,6 +191,11 @@
                         <div class="skill-item">
                             <div class="skill-info">
                                 <span>Java</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL</span>
                             </div>
                         </div>
                     </div>
@@ -340,32 +355,21 @@
     <section id="fundamentals" class="section bg-secondary">
         <div class="section-container">
             <div class="section-header fade-in">
-                <h2>CS Fundamentals</h2>
+                <h2>Core Subjects</h2>
                 <div class="line"></div>
             </div>
 
             <div class="fundamentals-grid fade-in">
                 <div class="fundamental-card glass">
-                    <div class="icon-wrapper"><i class="fas fa-network-wired"></i></div>
-                    <h3>Data Structures & Algorithms</h3>
-                    <p>Strong grasp of arrays, linked lists, trees, graphs, and dynamic programming concepts. Solved
-                        100+ problems on LeetCode and GFG.</p>
-                </div>
-
-                <div class="fundamental-card glass">
-                    <div class="icon-wrapper"><i class="fas fa-microchip"></i></div>
-                    <h3>Operating Systems</h3>
-                    <p>Understanding of process management, memory allocation, deadlocks, multithreading, and
-                        concurrency mechanisms.</p>
-                </div>
-
-
-
-                <div class="fundamental-card glass">
-                    <div class="icon-wrapper"><i class="fas fa-cubes"></i></div>
-                    <h3>Object-Oriented Programming</h3>
-                    <p>Solid understanding of polymorphism, inheritance, encapsulation, abstraction, and SOLID design
-                        principles.</p>
+                    <div class="icon-wrapper"><i class="fas fa-layer-group"></i></div>
+                    <h3>Computer Science Core</h3>
+                    <p>Building a strong foundation across essential computer science and data systems subjects.</p>
+                    <div class="subject-tags" aria-label="Core subjects">
+                        <span>DAA</span>
+                        <span>DBMS</span>
+                        <span>COA</span>
+                        <span>Computer Networks</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -389,7 +393,7 @@
                         <div class="icon glass"><i class="fas fa-envelope"></i></div>
                         <div>
                             <h4>Email</h4>
-                            <p>kstark845416@gmail.com</p>
+                            <p><a href="mailto:kstark845416@gmail.com">kstark845416@gmail.com</a></p>
                         </div>
                     </div>
 
@@ -404,12 +408,12 @@
 
                 <form id="contact-form" class="contact-form glass">
                     <div class="form-group">
-                        <input type="text" id="name" required placeholder=" ">
+                        <input type="text" id="name" autocomplete="name" required placeholder=" ">
                         <label for="name">Your Name</label>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" id="email" required placeholder=" ">
+                        <input type="email" id="email" autocomplete="email" required placeholder=" ">
                         <label for="email">Your Email</label>
                     </div>
 
@@ -422,7 +426,7 @@
                         <span>Send Message</span>
                         <i class="fas fa-paper-plane"></i>
                     </button>
-                    <div class="form-message"></div>
+                    <div class="form-message" role="status" aria-live="polite"></div>
                 </form>
             </div>
         </div>
@@ -437,10 +441,8 @@
                         class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/sachin-tiwari-9b143033b/" target="_blank" aria-label="LinkedIn"><i
                         class="fab fa-linkedin-in"></i></a>
-                <a href="https://leetcode.com/settings/profile/" target="_blank" aria-label="LeetCode"><i
+                <a href="https://leetcode.com/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode"><i
                         class="fas fa-code"></i></a>
-                <a href="https://www.geeksforgeeks.org/profile/ksachinwhqh" target="_blank"
-                    aria-label="GeeksforGeeks"><i class="fas fa-laptop-code"></i></a>
             </div>
             <p class="copyright">&copy; <span id="year"></span> Sachin Tiwari. All rights reserved.</p>
         </div>
