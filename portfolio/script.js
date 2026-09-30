@@ -250,6 +250,7 @@ if (contactForm) {
         const mailto = `mailto:kstark845416@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         formMessage.textContent = 'Opening your email app to send this message.';
         formMessage.className = 'form-message success';
+        contactForm.reset();
         window.location.href = mailto;
     });
 }
